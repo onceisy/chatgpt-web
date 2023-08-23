@@ -2,7 +2,7 @@
 import type { Ref } from 'vue'
 import { computed, onMounted, onUnmounted, ref } from 'vue'
 import { useRoute } from 'vue-router'
-import { NAutoComplete, NButton, NInput, useDialog, useMessage, NSwitch, NImageGroup, NImage, NSpace } from 'naive-ui'
+import { NAutoComplete, NButton, NInput, useDialog, useMessage, NImageGroup, NImage, NSpace } from 'naive-ui'
 import html2canvas from 'html2canvas'
 import { storeToRefs } from 'pinia'
 import { Message } from './components'
