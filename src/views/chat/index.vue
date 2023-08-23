@@ -522,12 +522,22 @@ onUnmounted(() => {
     </main>
     <footer :class="footerClass">
       <div class="flex items-center justify-between space-x-2">
-        <HoverButton tooltip="点击关闭或开启联网功能，开启后会自动从互联网获得信息来回答您，关闭联网能极大加快响应速度">
+        <HoverButton
+          :tooltip="
+          getEnabledNetwork ? 
+          '点击关闭联网功能，关闭联网能极大加快响应速度' :
+          '点击开启联网功能，开启后会自动从互联网获得信息来回答您'
+          ">
             <!-- <span class="text-xl text-[#4f555e]" @click="handleClear">
               <span style="color: #2979ff; width: 20px; display: inline-block;" v-if="getEnabledNetwork">联网开启</span>
               <span style="color: red; width: 20px; display: inline-block;" v-if="!getEnabledNetwork">联网关闭</span>
             </span> -->
-            <n-switch v-model:value="getEnabledNetwork" @update:value="handleToggleNetwork" />
+            <!-- <n-switch v-model:value="getEnabledNetwork" @update:value="handleToggleNetwork" /> -->
+            <SvgIcon
+              :style="getEnabledNetwork ? { color: '#18a058' } : ''"
+              class="text-lg"
+              icon="zondicons:network"
+              @click="handleToggleNetwork" />
         </HoverButton>
         <NAutoComplete v-model:value="prompt" :options="searchOptions" :render-label="renderOption">
           <template #default="{ handleInput, handleBlur, handleFocus }">
