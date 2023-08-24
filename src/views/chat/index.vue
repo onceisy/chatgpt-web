@@ -467,13 +467,19 @@ onUnmounted(() => {
               <div>永久免费提供学习和测试，支持上下文，支持开启关闭联网模式，支持保存会话，切勿发布至国内平台或微信分享</div>
               <div class="mt-1">
                 <n-button quaternary type="primary">
-                  <a target="_blank" href="http://ai.onceisy.com/">http://ai.onceisy.com</a>
+                  <a target="_blank" href="http://ai.onceisy.com/">https://ai.onceisy.com</a>
                 </n-button>
                 <span>国内服务器镜像（仅境内可访问）</span>
               </div>
               <div class="mt-1">
                 <n-button quaternary type="primary">
-                  <a target="_blank" href="http://ai.once.cyou/">http://ai.once.cyou</a>
+                  <a target="_blank" href="http://ai.once.cyou/">https://ai.once.cyou</a>
+                </n-button>
+                <span>海外服务器（境内境外都可访问）</span>
+              </div>
+              <div class="mt-1">
+                <n-button quaternary type="primary">
+                  <a target="_blank" href="http://ai.once.cyou/">https://ai.onceicu.com</a>
                 </n-button>
                 <span>海外服务器（境内境外都可访问）</span>
               </div>
