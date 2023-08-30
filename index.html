@@ -83,6 +83,23 @@
 		</div>
 	</div>
 	<script type="module" src="/src/main.ts"></script>
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var keys = {
+        'ai.onceisy.com': '5451f22a0b64a8cb71c9fd71b658b161',
+        'ai.onceicu.com': '3363fa295a2663c9c044cc26a183dbdb',
+        'ai.once.cyou': '7507e24e2b4855a8f8aefad38da84eba',
+      }
+      var key = keys[location.host]
+      if (key) {          
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?" + key;
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      }
+    })();
+  </script>
 </body>
 
 </html>
