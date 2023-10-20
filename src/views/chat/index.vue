@@ -230,7 +230,7 @@ async function onRegenerate(index: number) {
       signal: controller.signal,
       onDownloadProgress: ({ event }) => {
         const xhr = event.target
-        const { responseText } = xhr
+        const { responseText = '' } = xhr || {}
         // Always process the final line
         // const lastIndex = responseText.lastIndexOf('\n')
         let chunk = responseText;
@@ -466,22 +466,22 @@ onUnmounted(() => {
               <SvgIcon icon="ri:bubble-chart-fill" class="mr-2 text-3xl" />
               <div>永久免费提供学习和测试，支持上下文，支持开启关闭联网模式，支持保存会话，切勿发布至国内平台或微信分享</div>
               <div class="mt-1">
+                <span>站点1:</span>
                 <n-button quaternary type="primary">
                   <a target="_blank" href="https://ai.onceisy.com/">https://ai.onceisy.com</a>
                 </n-button>
-                <span>国内服务器镜像（仅境内可访问）</span>
               </div>
               <div class="mt-1">
+                <span>站点2:</span>
                 <n-button quaternary type="primary">
-                  <a target="_blank" href="http://ai.once.cyou/">http://ai.once.cyou</a>
+                  <a target="_blank" href="https://ai.once.cyou/">https://ai.once.cyou</a>
                 </n-button>
-                <span>海外服务器（境内境外都可访问）</span>
               </div>
               <div class="mt-1">
+                <span>站点3:</span>
                 <n-button quaternary type="primary">
                   <a target="_blank" href="https://ai.once.cyou/">https://ai.onceicu.com</a>
                 </n-button>
-                <span>海外服务器（境内境外都可访问）</span>
               </div>
               <div class="mt-1 text-rose-600">服务器和ai接口昂贵，站长打工入不敷出，希望大家随意捐助几元（不捐也能用！），就为网站就能多运行一段时间</div>
               <div class="mt-1 mb-3 text-rose-600">PS: 所有捐赠将用于维护免费站运行</div>

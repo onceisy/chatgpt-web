@@ -3,9 +3,9 @@
 <div style="font-size: 1.5rem;">
   <a href="./README.md">中文</a> |
   <a href="./README.en.md">English</a><br/>
-  <a href="https://ai.onceisy.com/">[DEMO]国内服务器镜像（仅境内可访问）</a><br/>
-  <a href="https://ai.onceicu.com/">[DEMO]国外镜像（境内境外都可访问）</a><br/>
-  <a href="http://ai.once.cyou/">[DEMO]国外镜像（境内境外都可访问）</a>
+  <a href="https://ai.onceisy.com/">https://ai.onceisy.com</a><br/>
+  <a href="https://ai.onceicu.com/">https://ai.onceicu.com</a><br/>
+  <a href="https://ai.once.cyou/">https://ai.once.cyou</a>
 </div>
 </br>
 
